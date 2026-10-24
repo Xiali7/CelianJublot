@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Instrument+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <a href="#haut" class="logo" data-site="name"></a>
+  <nav><a href="#travaux">Travaux</a><a href="#lab">Lab</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="haut">
+  <section class="hero">
+    <video class="hero-bg" id="heroVideo" autoplay muted loop playsinline></video>
+    <div class="hero-fx"></div>
+    <div class="hero-txt"><h1 data-site="headline"></h1><p data-site="intro"></p></div>
+  </section>
+
+  <section id="travaux" class="sec">
+    <h2>Travaux</h2>
+    <div class="grid" id="gridWork"></div>
+  </section>
+
+  <section id="lab" class="sec">
+    <h2>Lab</h2>
+    <p class="lead">Outils, tests de rendu, expériences. C’est ici que j’essaie, je casse et j’améliore.</p>
+    <div class="chips" id="labFilters"></div>
+    <ul class="rows" id="rowsLab"></ul>
+  </section>
+
+  <section id="apropos" class="sec two">
+    <h2>À propos</h2>
+    <div><p data-site="about"></p><ul class="tags" id="tools"></ul></div>
+  </section>
+
+  <section id="contact" class="sec">
+    <h2>Contact</h2>
+    <a class="mail" id="mail"></a>
+    <p class="links" id="links"></p>
+  </section>
+</main>
+<footer>© <span data-site="name"></span></footer>
+
+<dialog id="modal">
+  <button class="close" id="close" aria-label="Fermer">Fermer</button>
+  <div id="modalBody"></div>
+</dialog>
+
+<script src="data/site.js"></script>
+<script src="data/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
